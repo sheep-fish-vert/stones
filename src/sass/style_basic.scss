@@ -82,5 +82,13 @@ input, textarea{
 
 //  example -> @include font-face('PFDinTextPro', 'PFDinTextPro-Bold', 700, italic);
 
+ @include font-face('Acrom', 'Acrom-Bold', 700);
+ @include font-face('Acrom', 'Acrom-ExtraBold', 800);
+ @include font-face('Acrom', 'Acrom-Medium', 500);
+ @include font-face('Acrom', 'Acrom-Regular', 400);
+ @include font-face('Acrom', 'Acrom-Thin', 200);
+
+ 
+ 
 
 /*/fonts*/
