@@ -43,6 +43,7 @@ header{background: url('../../images/header-background.jpg') no-repeat; backgrou
 					
 				}
 			}
+			.bag{position: absolute; bottom: 0; right: 0px;}
 			.central-part{
 				.img-stones{
 					
@@ -54,11 +55,11 @@ header{background: url('../../images/header-background.jpg') no-repeat; backgrou
 				.new-price{ font-size: 37px; font-weight: bold; line-height: 40px; text-align: center;
 					
 				}
-				form{
-					.telephone{
+				form{ text-align: center;
+					.telephone{margin: 20px auto; width: 75%;
 						
 					}
-				.button{
+					.button{ margin: 20px auto; width: 75%; text-align: center; font-size: 45px; padding: 0 50px;
 					
 					}
 				}
