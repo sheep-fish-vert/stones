@@ -1,9 +1,11 @@
 header{background: url('../../images/header-background.jpg') no-repeat; background-size: cover;
 	nav{width: 100%; background: url('../../images/grey-background.png');
-		.mbox{display: flex; justify-content: space-between;
-			.menu-item{ text-decoration: none; color: #fff; font-family: 'Acrom'; font-size: 22px; padding: 20px 0; font-weight: 200;
-				
+		.mbox{display: flex; justify-content: space-between; padding: 10px 0;
+			.menu-item{ text-decoration: none; color: #fff; font-family: 'Acrom'; font-size: 22px; padding: 10px 5px; font-weight: 200; border: 2px solid transparent;
+				&:hover{border: 2px solid #ce0115; border-radius: 5px;}	
+				&:active{background-color: #1e1e1e;}
 			}
+
 		}
 	}
 	.tittle{
@@ -27,5 +29,49 @@ header{background: url('../../images/header-background.jpg') no-repeat; backgrou
 	}
 	.statement{ width: 100%; text-align: center; color: #fff; font-family: 'Acrom'; font-size: 27px; padding: 40px;
 		
+	}
+}
+
+.first-block{background-color:#ededed;
+	.mbox{font-family: 'Acrom';
+		.first-block-header{font-size: 64px; font-weight: 200; color: #232323 ; width: 100%; text-align: center; padding: 40px;
+			
+		}
+		.main-content{ display: flex; justify-content: space-between; padding: 40px 0;
+			.present{display: flex;  flex-direction: column; align-items: center;				
+				span{font-size: 30px; font-weight: 200; text-align: center; padding: 20px 0;
+					
+				}
+			}
+			.central-part{
+				.img-stones{
+					
+				}
+				.old-price{font-size: 31px; text-align: center; padding: 30px 0; line-height: 40px;
+					span{text-decoration:line-through; padding: 20px 0;}
+					
+				}
+				.new-price{ font-size: 37px; font-weight: bold; line-height: 40px; text-align: center;
+					
+				}
+				form{
+					.telephone{
+						
+					}
+				.button{
+					
+					}
+				}
+				.lower-text{ 
+					span{display: block; width: 100%;font-size: 45px; text-align: center; padding: 40px 0; }
+				}	
+			}
+			.hury-up{font-size: 29px; font-weight: 200; text-align: center; padding: 40px 0;
+				span{font-size: 49px; font-weight: 200;
+					
+				}
+			}
+
+		}
 	}
 }
