@@ -1,0 +1,41 @@
+/* 4 */
+.conteiner-top{  padding-top: 40px; padding-bottom: 57px; background-image: url(/images/bg-4.jpg);
+    .title-text{ font-size: 51px; line-height: 1; font-family: 'Acrom', sans-serif; font-weight: 400; text-align: right; width: 60%; position: relative;
+        &:before{content: ''; position: absolute; left: 100%; width: 460px; height: 378px; background-image: url(/images/b4-mm.png); bottom: -20px;}        
+    }
+    .item-row{display: flex; align-items: flex-start; justify-content: space-between; padding-top: 75px;
+        .item{width: 295px; border-radius: 34px; background-color: rgba(255,255,255,0.38); min-height: 315px; display: flex; flex-wrap: wrap; align-content: center;; justify-content: center; text-align: center; box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.12);
+            .i-mage{padding-bottom: 17px; min-height: 140px;}
+            .after-text{padding: 0 15px; font-size: 24px; font-family: 'Acrom', sans-serif; font-weight: 400; color: rgb(0, 0, 0);line-height: 1.2; }
+        }
+    }
+}
+
+.conteiner-bot{ padding: 45px 0; background-image: url(/images/2.jpg); background-attachment: fixed; background-size: cover; background-position: center; 
+    .contact-form{width: 960px; margin: 0 auto;  border-radius: 12px; box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.38); background-color: rgba(255,255,255,0.85); padding: 35px 20px 60px; 
+        .contact-form-title{ text-align: center; font-family: 'Acrom', sans-serif; padding-bottom: 60px;
+            p{ font-size: 68px; font-weight: 200; padding-bottom: 25px;
+                span{font-size: 35px; font-weight: 200;}
+            }
+            b{font-weight: 700; font-size: 37px; display: block; max-width: 640px; margin: 0 auto;}
+            i{display: block; font-size: 21px; font-weight: 200; padding-bottom: 60px; padding-top: 28px;}            
+        }
+        .contact-form-row{ padding-top: 20px; max-width: 385px; margin: 0 auto;
+            
+        }
+    }
+}
+
+
+/* 4 */
+
+
+/* form  */
+    input{width: 100%; height: 64px; border-radius: 26px; border: 3px solid #000000; padding-left: 18px; font-size: 29px; font-weight: 200; color: black; background-color: transparent;
+        &.error{border-color: red;}
+    }
+    .button{height: 68px; width: 100%; display: flex; align-items: center; border-radius: 26px; border: 3px solid #b90801; background-color: #b90801; color: white; font-family: 'Acrom', sans-serif; font-weight: 200; font-size: 26px; 
+        span{display: block; width: 100%; text-align: center;}
+    }
+/* form */  
+
