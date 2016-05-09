@@ -1,4 +1,4 @@
-header{background: url('../../images/header-background.jpg') no-repeat; background-size: cover;
+header{background: url('../../images/header-background.jpg') no-repeat; 
 	nav{width: 100%; background: url('../../images/grey-background.png');
 		.mbox{display: flex; justify-content: space-between;
 			.menu-item{ text-decoration: none; color: #fff; font-family: 'Acrom'; font-size: 22px; padding: 20px 0; font-weight: 200;
@@ -7,7 +7,7 @@ header{background: url('../../images/header-background.jpg') no-repeat; backgrou
 		}
 	}
 	.tittle{
-		.mbox{padding: 50px 0 400px 0;
+		.mbox{padding: 50px 0 340px 0;
 			h2{color: #fff; font-family: 'Acrom'; font-size: 55px; font-weight: 400; text-indent: 30px;
 				
 			}
@@ -16,13 +16,16 @@ header{background: url('../../images/header-background.jpg') no-repeat; backgrou
 
 	.degrees{ background: url('../../images/grey-background.png'); width: 100%; opacity: 0.7; font-family: 'Acrom';
 		.mbox{color: #fff;
-			.degrees-title{ width: 100%; text-align: center; font-size: 50px; font-weight: bold;   
+			.degrees-title{ width: 100%; text-align: center; font-size: 50px; font-weight: bold;  padding: 20px;  
 				
 			}
-			.degrees-article{text-align: center;
-				span{display: block;width: 100%; 
+			.degrees-article{text-align: center; font-size: 30px; font-weight: bold;
+				span { display: block ;width: 100%; font-size: 29px; padding: 25px; 
 				}
 			}
 		}
+	}
+	.statement{ width: 100%; text-align: center; color: #fff; font-family: 'Acrom'; font-size: 27px; padding: 40px 0; margin-bottom: 30px;
+		
 	}
 }
