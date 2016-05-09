@@ -1,3 +1,4 @@
+// header
 header{background: url('../../images/header-background.jpg') no-repeat; background-size: cover;
 	nav{width: 100%; background: url('../../images/grey-background.png');
 		.mbox{display: flex; justify-content: space-between; padding: 10px 0;
@@ -32,6 +33,7 @@ header{background: url('../../images/header-background.jpg') no-repeat; backgrou
 	}
 }
 
+// First Block
 .first-block{background-color:#ededed;
 	.mbox{font-family: 'Acrom';
 		.first-block-header{font-size: 64px; font-weight: 200; color: #232323 ; width: 100%; text-align: center; padding: 40px;
@@ -75,4 +77,9 @@ header{background: url('../../images/header-background.jpg') no-repeat; backgrou
 
 		}
 	}
+}
+
+//second-block
+.second-block{
+	
 }
