@@ -1,12 +1,11 @@
 // header
-header{background: url('../../images/header-background.jpg') no-repeat; background-size: cover;
+header{background: url('../../images/header-background.jpg') no-repeat; background-size: cover; background-position: 50% 50%;
 	nav{width: 100%; background: url('../../images/grey-background.png');
 		.mbox{display: flex; justify-content: space-between; padding: 10px 0;
-			.menu-item{ text-decoration: none; color: #fff; font-family: 'Acrom'; font-size: 22px; padding: 10px 5px; font-weight: 200; border: 2px solid transparent;
-				&:hover{border: 2px solid #ce0115; border-radius: 5px;}	
+			.menu-item{ text-decoration: none; color: #fff; font-family: 'Acrom'; font-size: 22px; padding: 10px 10px; font-weight: 200; border: 2px solid transparent;
+				&:hover{border: 2px solid #ce0115; border-radius: 25px;}	
 				&:active{background-color: #1e1e1e;}
 			}
-
 		}
 	}
 	.tittle{
@@ -28,7 +27,7 @@ header{background: url('../../images/header-background.jpg') no-repeat; backgrou
 			}
 		}
 	}
-	.statement{ width: 100%; text-align: center; color: #fff; font-family: 'Acrom'; font-size: 27px; padding: 40px;
+	.statement{ width: 100%; text-align: center; color: #fff; font-family: 'Acrom'; font-size: 27px; padding: 60px;
 		
 	}
 }
@@ -80,6 +79,30 @@ header{background: url('../../images/header-background.jpg') no-repeat; backgrou
 }
 
 //second-block
-.second-block{
-	
+.second-block{background: url('../../images/second-block-background.jpg') no-repeat; background-size: cover; background-position: 50% 50%; height: 430px;
+	.mbox{display: flex; font-family: 'Acrom';
+		.left-side{width: 50%; color: white; font-size: 40px; text-align: center; padding: 40px 0 0 80px;
+			span{font-size: 54px; font-weight: bold;
+				
+			}
+			img{position: absolute; width: 125px; height: 125px; left: 50px; top: 90px;
+				
+			}
+		}	
+		.right-side{width: 50%; display: flex; flex-direction: column; padding: 0 0 0 70px;
+			.heading{font-size: 48px; color: #fff; padding: 30px 0 70px 30px;
+				span{font-size: 68px; font-weight: bold;}
+			}
+			.lower-part{display: flex; color: #fff; 
+				span{font-size: 28px; font-weight: bold;
+					span{font-size: 26px; font-weight: 200; }
+				}
+				img{position: relative; left: -30px;}
+			}
+			
+		}
+		.piramid-stones{position: absolute; top: 230px; left: -30px;
+			
+		}
+	}
 }
