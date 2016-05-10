@@ -92,3 +92,18 @@
     .errorText{display: none !important;}
 /* form */  
 
+/* hidden block */
+    .fancybox-form {
+        .fancybox-skin{ border-radius: 12px; background-image: url(/images/pop-bg.jpg);}
+        .fancybox-close{left: calc(100% + 10px); background-image: url(/images/close-prod.png); background-position: center;width: 31px; height: 31px; top: 0; }
+    }
+    #call_success{ width: 590px; height: 230px; font-family: 'Acrom', sans-serif;  text-align: center;  border-radius: 12px; display: flex; align-items: center; justify-content: center;
+        .call-title{ font-size: 61px; line-height: 1.2; } 
+        .call-subtitle{ font-size: 45px; line-height: 1.2; }
+    }
+    
+    #call-popup{ width: 650px; height: 440px; display: flex; align-items: center; flex-wrap: wrap;
+        .contact-form-title{ font-size: 61px; font-weight: 500; text-align: center; color: black; padding-bottom: 50px; }
+        .contact-form-row { max-width: 390px; margin: 0 auto; padding-bottom: 26px;}
+    }
+/* hidden block */
