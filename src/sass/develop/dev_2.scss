@@ -5,6 +5,7 @@
         }
         .item-row{display: flex; align-items: flex-start; justify-content: space-between; padding-top: 75px;
             .item{width: 295px; border-radius: 34px; background-color: rgba(255,255,255,0.38); min-height: 315px; display: flex; flex-wrap: wrap; align-content: center;; justify-content: center; text-align: center; box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.12);
+                    &:hover{ box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.52);}
                 .i-mage{padding-bottom: 17px; min-height: 140px;}
                 .after-text{padding: 0 15px; font-size: 24px; font-family: 'Acrom', sans-serif; font-weight: 400; color: rgb(0, 0, 0);line-height: 1.2; }
             }
@@ -14,7 +15,10 @@
     .conteiner-bot{ padding: 45px 0; background-image: url(/images/2.jpg); background-attachment: fixed; background-size: cover; background-position: center; 
         .contact-form{width: 960px; margin: 0 auto;  border-radius: 12px; box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.38); background-color: rgba(255,255,255,0.85); padding: 35px 20px 40px; 
             .contact-form-title{ text-align: center; font-family: 'Acrom', sans-serif; padding-bottom: 60px;
-                p{ font-size: 68px; font-weight: 200; padding-bottom: 25px;
+                p{
+                    .atention{ font-size: 68px; font-weight: 200; padding-bottom: 25px; opacity: 0;transition: all ease-out 4.0s;
+                        &.animated{ opacity: 1;}
+                    }
                     span{font-size: 35px; font-weight: 200;}
                 }
                 b{font-weight: 700; font-size: 37px; display: block; max-width: 640px; margin: 0 auto;}
@@ -35,8 +39,9 @@
         .mbox{display: flex; align-items: center; justify-content: space-between;
             .left{width: 50%; 
                 .convert{border: 3px solid rgba(255,255,255,0.6); border-radius: 12px; background-color: rgba(0, 0, 0, 0.4); color: white; padding: 25px;
-                    ul{ padding-top: 20px;
-                        li{ position: relative; font-size: 21px; line-height: 1; padding-bottom: 40px; font-weight: 200;  font-family: 'Acrom', sans-serif; padding-left: 45px;
+                    ul{ padding-top: 20px; overflow: hidden;
+                        li{ position: relative; font-size: 21px; line-height: 1; padding-bottom: 40px; font-weight: 200;  font-family: 'Acrom', sans-serif; padding-left: 45px; transform: translate(-100%, 0); transition: all ease-out 2.0s;
+                           &.animated{transform: translate(0, 0);}
                             &:before{content: ''; position: absolute; left: 0; width: 20px; height: 20px; border-radius: 50%; background-color: white; }
                         }
                     }

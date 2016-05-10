@@ -2,7 +2,9 @@
     .mbox{max-width: 1280px;}
     .title{font:200 43px/43px 'Acrom'; color: #000; text-align: center;    padding: 49px 10px 66px;}
     .items{ text-align: center;padding-bottom: 55px;
-        li{max-width: 400px;width: 100%; display: inline-block; vertical-align: top;margin-bottom: 6px;}
+        li{max-width: 400px;width: 100%; display: inline-block; vertical-align: top;margin-bottom: 6px; opacity:0; transition: all ease-out 2.0s;
+            &.animated{opacity: 1;}
+        }
     }
     .img{ text-align: center; margin-bottom: 26px;}
     .txt{font:200 20px/34px 'Acrom'; color: #000; position: relative;padding: 0 10px;
