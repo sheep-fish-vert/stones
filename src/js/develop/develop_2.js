@@ -32,7 +32,6 @@ $(document).ready(function(){
     });
     
     $('.slider-for').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-        console.log(nextSlide);
         $('.slider-nav').find('.item').removeClass('slick-current').eq(nextSlide).addClass('slick-current');
     });
 
