@@ -22,12 +22,24 @@
 					Новая цена <br>
 					250 000 р.
 				</div>
-				<form>
-					<input type="text" name="contact_tel" class="telephone tel-mask" placeholder="телефон">
-						
-					</input>
-					<input type="submit" class="button" value="Связаться"></input>
-				</form>
+				<form action="ajax.php" name="" class="contact-form first-block-form">
+		            <div class="contact-form-row cfix">
+		                <div class="contact-form-item">
+		                    <div class="contact-form-item-input form_row">
+		                        <div class="form_input">
+		                            <input type="text" name="contact_tel" value="" required="required" placeholder="телефон" class="tel-mask">
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		            <div class="contact-form-row cfix">
+		                <div class="contact-form-item">
+		                    <button type="submit" class="contact-submit button">
+		                        <span>Связаться</span>
+		                    </button>
+		                </div>
+		            </div>
+		        </form>
 				<div class="lower-text">
 					<span>+ <br> мешочек для камней</span>
 				</div>
