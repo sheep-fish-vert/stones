@@ -109,7 +109,7 @@ header{background: url('../../images/header-background.jpg') no-repeat; backgrou
 
 //third block
 
-.third-block{ background: url('../../images/third-block-background.jpg') no-repeat; background-size: cover;
+.third-block{ background: url('../../images/third-block-background.jpg') no-repeat; background-size: cover; font-family: 'Acrom';
 	.mbox{
 		.third-block-headding {color: #fff; text-align: center; font-size: 38px; padding: 70px 0; 
 			span{font-size: 56px; line-height: 70px; color: #b90801;}
@@ -122,7 +122,7 @@ header{background: url('../../images/header-background.jpg') no-repeat; backgrou
 			}
 		}
 		.video{width: 100%; display: flex; justify-content: center; padding: 50px 0;
-			.video-vraper{ border: 2px solid #fff; 
+			.video-vraper{ border: 2px solid #fff; padding: 5px; border-radius: 4px;
 			}
 		}
 		.button-vraper{width: 100%;
@@ -133,4 +133,31 @@ header{background: url('../../images/header-background.jpg') no-repeat; backgrou
 			}
 		}
 	}
+}
+
+//footer
+
+.footer{ background: url("../../images/background-footer.jpg"); 
+       .mbox{display: flex; justify-content: space-between; padding: 0 0; font-family:'Acrom';
+       		.footer-part:nth-child(1){white-space: pre-line; line-height: 25px; font-size: 22px; padding: 0 0 10px 0;
+       			
+       		}
+       		.footer-part:nth-child(2){display: flex; align-items: center;    
+       			.button-vraper{ 
+       				.footer-button{
+       					.button {padding: 10px;
+       					}	
+       				}
+       			}		
+       		}
+       		.footer-part:nth-child(3){font-size: 34px; display: flex; flex-direction: column; justify-content: center; 
+       		       
+       			.logo-block{ font-size: 17px; display: flex; justify-content: space-between;padding: 10px 0 0 10px; 
+       				p{ padding: 30px 0 0 0 ;}
+       			}
+       			
+       		}
+       	
+       }
+	
 }
