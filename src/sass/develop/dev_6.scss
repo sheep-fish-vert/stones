@@ -106,3 +106,31 @@ header{background: url('../../images/header-background.jpg') no-repeat; backgrou
 		}
 	}
 }
+
+//third block
+
+.third-block{ background: url('../../images/third-block-background.jpg') no-repeat; background-size: cover;
+	.mbox{
+		.third-block-headding {color: #fff; text-align: center; font-size: 38px; padding: 70px 0; 
+			span{font-size: 56px; line-height: 70px; color: #b90801;}
+		}
+		.third-block-content{
+			ul{ width: 670px; float: right; padding: 30px 0 0 0; white-space: pre-line; text-align: right;
+				li{ font-size: 19px; font-weight: 200; color: #cac8c7; line-height: 25px; padding: 30px 0;
+					span{font-size: 22px; font-weight: bold; color: #fff; }
+				}
+			}
+		}
+		.video{width: 100%; display: flex; justify-content: center; padding: 50px 0;
+			.video-vraper{ border: 2px solid #fff; 
+			}
+		}
+		.button-vraper{width: 100%;
+			.third-class-button{ width: 475px; margin: 0 auto; padding: 80px 0;
+				a{ text-align: center; font-size: 33px; padding: 0 20px
+					
+				}
+			}
+		}
+	}
+}
