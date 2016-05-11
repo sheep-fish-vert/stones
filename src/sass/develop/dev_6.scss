@@ -157,7 +157,7 @@ header{background: url('../../images/header-background.jpg') no-repeat; backgrou
 //footer
 
 .footer{ background: url("../../images/background-footer.jpg"); 
-       .mbox{display: flex; justify-content: space-between; padding: 0 0; font-family:'Acrom'; 
+       .mbox{display: flex; justify-content: space-between; padding: 0 0; font-family:'Acrom'; max-width: 1170px;
        		.footer-part:nth-child(1){white-space: pre-line; line-height: 25px; font-size: 20px; padding: 0 0 10px 0;
        			
        		}
