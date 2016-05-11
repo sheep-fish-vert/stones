@@ -25,7 +25,11 @@
                 i{display: block; font-size: 21px; font-weight: 200; padding-bottom: 60px; padding-top: 28px;}            
             }
             .contact-form-row{ padding-top: 20px; max-width: 385px; margin: 0 auto;
-                
+                .contact-form-item{
+                    button{
+                        span{ }
+                    }
+                }
             }
         }
     }
@@ -88,9 +92,14 @@
         &:-ms-input-placeholder {color:black;}
     }
     
-    .button{height: 68px; width: 100%; display: flex; align-items: center; border-radius: 26px; border: 3px solid #b90801; background-color: #b90801; color: white; font-family: 'Acrom', sans-serif; font-weight: 200; font-size: 26px;transition: all 0.3s; text-decoration: none;
-        span{display: block; width: 100%; text-align: center;}
-        &:hover{background-color: #ef160d; border-color: #ef160d;}
+    .button{height: 68px; width: 100%; display: flex; align-items: center; border-radius: 26px; border: 3px solid #b90801; background-color: #b90801; color: white; font-family: 'Acrom', sans-serif; font-weight: 200; font-size: 26px;transition: all 0.3s; text-decoration: none; overflow: hidden; text-align: center;
+        &:after{display: inline; min-width: 250%; min-height: 68px; content: ''; position: relative; top: 0; left: -400%; background-color: #ef160d; z-index: 1; transition: all 0.5s;   
+        }
+        span{display: block; min-width: 100%; text-align: center; z-index: 2; }
+        &:hover{
+            &:after{left: -200%;}
+        }
+            //background-color: #ef160d; border-color: #ef160d;}
         &:active{border-color: #b90801; background-color: #ef160d; }
     }
     

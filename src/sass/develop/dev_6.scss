@@ -1,8 +1,10 @@
 // header
 header{background: url('../../images/header-background.jpg') no-repeat; background-size: cover; background-position: 50% 50%; background-attachment: fixed; 
 		img{display: block;}
-	nav{width: 100%; background: url('../../images/grey-background.png');
-		.mbox{display: flex; justify-content: space-between; padding: 10px 0;
+	nav{width: 100%; background: url('../../images/background-navigation.jpg'); position: fixed; z-index: 10; opacity: 1; transition: all 0.5s; 
+		&.rotate{margin: 20px; width: 98%; 
+	    }
+			.mbox{display: flex; justify-content: space-between; padding: 10px 0;
 			.menu-item{ text-decoration: none; color: #fff; font-family: 'Acrom'; font-size: 22px; padding: 10px 10px; font-weight: 200; border: 2px solid transparent;
 				&:hover{border: 2px solid #ce0115; border-radius: 25px;}	
 				&:active{background-color: #1e1e1e;}
@@ -10,7 +12,7 @@ header{background: url('../../images/header-background.jpg') no-repeat; backgrou
 		}
 	}
 	.tittle{
-		.mbox{padding: 50px 0 400px 0;
+		.mbox{padding: 100px 0 400px 0;
 			h2{color: #fff; font-family: 'Acrom'; font-size: 55px; font-weight: 400; text-align: center;
 				
 			}
@@ -31,7 +33,7 @@ header{background: url('../../images/header-background.jpg') no-repeat; backgrou
 	.statement{ width: 100%; text-align: center; color: #fff; font-family: 'Acrom'; font-size: 27px; padding: 60px;
 		
 	}
-	.anchor{text-decoration: none;color: #fff; position: fixed; top: 500px; right: 30px; transition: all 0.5s;
+	.anchor{text-decoration: none;color: #fff; position: fixed; top: 500px; right: 30px; transition: all 0.5s; z-index: 2;
 		img{display: block;}
 		span{display: block;}
 	}
@@ -144,8 +146,8 @@ header{background: url('../../images/header-background.jpg') no-repeat; backgrou
 		}
 		.button-vraper{width: 100%;
 			.third-class-button{ width: 475px; margin: 0 auto; padding: 80px 0;
-				a{ text-align: center; font-size: 33px; padding: 0 20px
-					
+				a{ text-align: center; font-size: 33px; padding: 0 100px;
+					span{}
 				}
 			}
 		}
@@ -176,5 +178,51 @@ header{background: url('../../images/header-background.jpg') no-repeat; backgrou
        		}
        	
        }
+}
+
+//six block
+
+
+.six-block{
+	.mbox{font-family: 'Acrom';
+		.advantages{display: flex; justify-content: space-between;padding: 40px 0; 
+			.advantage-item{ display: flex; flex-direction: column; align-items: center;
+				img{}
+				.advantage-name{padding: 10px 0 0 0; font-size: 33px; font-weight: 200;
+					
+				}
+				.advantage-description{white-space: pre-line; font-size: 18px; font-weight: 200; line-height: 25px;
+					
+				}
+
+				&:nth-child(2){
+					img{-webkit-filter: grayscale(100%); margin-top: -10px;
+
+						}	
+				}
+			}
+		}
+
+		.present-block{padding: 20px;display: flex; flex-direction: column; align-items: center;
+			img{opacity: 0; transition: all ease-out 1.5s;  position: relative; animation: jumping; animation-duration: 0.5s; animation-iteration-count: infinite; animation-direction: alternate;
+				&.animated{
+					opacity: 1;
+				}
+			}
+
+			span{padding: 20px; text-transform: uppercase; font-size: 28px; font-weight: 200;
+				
+			}
+		}
+	}
 	
+}
+//animation for six block gift.png
+@keyframes jumping{
+	0%{
+		top: 0;
+	}
+	100%{
+		top: -20px;
+	}
 }
