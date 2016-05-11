@@ -41,7 +41,7 @@ header{background: url('../../images/header-background.jpg') no-repeat; backgrou
 
 // First Block
 .first-block{background-color:#ededed;
-	.mbox{font-family: 'Acrom'; overflow: hidden; 
+	.mbox{font-family: 'Acrom'; overflow: hidden; max-width: 1170px; 
 		.first-block-header{font-size: 64px; font-weight: 200; color: #232323 ; width: 100%; text-align: center; padding: 40px;
 			
 		}
@@ -95,7 +95,7 @@ header{background: url('../../images/header-background.jpg') no-repeat; backgrou
 
 //second-block
 .second-block{background: url('../../images/second-block-background.jpg') no-repeat; background-size: cover; background-position: 50% 50%; height: 430px;
-	.mbox{display: flex; font-family: 'Acrom';
+	.mbox{display: flex; font-family: 'Acrom'; max-width: 1170px;
 		.left-side{width: 50%; color: white; font-size: 40px; text-align: center; padding: 40px 0 0 80px;
 			span{font-size: 54px; font-weight: bold;
 				
