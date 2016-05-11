@@ -92,13 +92,14 @@
         &:-ms-input-placeholder {color:black;}
     }
     
-    .button{height: 68px; width: 100%; display: flex; align-items: center; border-radius: 26px; border: 3px solid #b90801; background-color: #b90801; color: white; font-family: 'Acrom', sans-serif; font-weight: 200; font-size: 26px;transition: all 0.3s; text-decoration: none; overflow: hidden; text-align: center;
-        &:after{display: inline; min-width: 250%; min-height: 68px; content: ''; position: relative; top: 0; left: -400%; background-color: #ef160d; z-index: 1; transition: all 0.5s;   
+    .button{height: 68px; width: 100%; display: flex; align-items: center; border-radius: 26px; border: 3px solid #b90801; background-color: #b90801; color: white; font-family: 'Acrom', sans-serif; font-weight: 200; font-size: 26px;transition: all 0.3s; text-decoration: none; overflow: hidden; text-align: center; position: relative; z-index: 1;
+        &:after{display: block; min-width: 100%; min-height: 68px; content: ''; position: absolute; top: 0; left: -400%; background-color: #ef160d; z-index: 1; transition: all 0.5s;   
+        }
+        &:hover{cursor: pointer;
+            &:after{left: 0;}
         }
         span{display: block; min-width: 100%; text-align: center; z-index: 2; }
-        &:hover{
-            &:after{left: -200%;}
-        }
+       
             //background-color: #ef160d; border-color: #ef160d;}
         &:active{border-color: #b90801; background-color: #ef160d; }
     }
