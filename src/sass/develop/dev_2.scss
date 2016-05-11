@@ -98,7 +98,7 @@
         &:hover{cursor: pointer;
             &:after{left: 0;}
         }
-        span{display: block; min-width: 100%; text-align: center; z-index: 2; }
+        span{display: block; min-width: 100%; text-align: center; z-index: 2; position: relative; z-index: 3; }
        
             //background-color: #ef160d; border-color: #ef160d;}
         &:active{border-color: #b90801; background-color: #ef160d; }
