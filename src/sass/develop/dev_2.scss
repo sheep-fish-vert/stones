@@ -5,6 +5,7 @@
         }
         .item-row{display: flex; align-items: flex-start; justify-content: space-between; padding-top: 75px;
             .item{width: 295px; border-radius: 34px; background-color: rgba(255,255,255,0.38); min-height: 315px; display: flex; flex-wrap: wrap; align-content: center;; justify-content: center; text-align: center; box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.12);
+                    &:hover{ box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.52);}
                 .i-mage{padding-bottom: 17px; min-height: 140px;}
                 .after-text{padding: 0 15px; font-size: 24px; font-family: 'Acrom', sans-serif; font-weight: 400; color: rgb(0, 0, 0);line-height: 1.2; }
             }
@@ -14,14 +15,21 @@
     .conteiner-bot{ padding: 45px 0; background-image: url(/images/2.jpg); background-attachment: fixed; background-size: cover; background-position: center; 
         .contact-form{width: 960px; margin: 0 auto;  border-radius: 12px; box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.38); background-color: rgba(255,255,255,0.85); padding: 35px 20px 40px; 
             .contact-form-title{ text-align: center; font-family: 'Acrom', sans-serif; padding-bottom: 60px;
-                p{ font-size: 68px; font-weight: 200; padding-bottom: 25px;
+                p{
+                    .atention{ font-size: 68px; font-weight: 200; padding-bottom: 25px; opacity: 0;transition: all ease-out 4.0s;
+                        &.animated{ opacity: 1;}
+                    }
                     span{font-size: 35px; font-weight: 200;}
                 }
                 b{font-weight: 700; font-size: 37px; display: block; max-width: 640px; margin: 0 auto;}
                 i{display: block; font-size: 21px; font-weight: 200; padding-bottom: 60px; padding-top: 28px;}            
             }
             .contact-form-row{ padding-top: 20px; max-width: 385px; margin: 0 auto;
-                
+                .contact-form-item{
+                    button{
+                        span{ }
+                    }
+                }
             }
         }
     }
@@ -35,8 +43,9 @@
         .mbox{display: flex; align-items: center; justify-content: space-between;
             .left{width: 50%; 
                 .convert{border: 3px solid rgba(255,255,255,0.6); border-radius: 12px; background-color: rgba(0, 0, 0, 0.4); color: white; padding: 25px;
-                    ul{ padding-top: 20px;
-                        li{ position: relative; font-size: 21px; line-height: 1; padding-bottom: 40px; font-weight: 200;  font-family: 'Acrom', sans-serif; padding-left: 45px;
+                    ul{ padding-top: 20px; overflow: hidden;
+                        li{ position: relative; font-size: 21px; line-height: 1; padding-bottom: 40px; font-weight: 200;  font-family: 'Acrom', sans-serif; padding-left: 45px; transform: translate(-100%, 0); transition: all ease-out 2.0s;
+                           &.animated{transform: translate(0, 0);}
                             &:before{content: ''; position: absolute; left: 0; width: 20px; height: 20px; border-radius: 50%; background-color: white; }
                         }
                     }
@@ -83,9 +92,15 @@
         &:-ms-input-placeholder {color:black;}
     }
     
-    .button{height: 68px; width: 100%; display: flex; align-items: center; border-radius: 26px; border: 3px solid #b90801; background-color: #b90801; color: white; font-family: 'Acrom', sans-serif; font-weight: 200; font-size: 26px;transition: all 0.3s;
-        span{display: block; width: 100%; text-align: center;}
-        &:hover{background-color: #ef160d; border-color: #ef160d;}
+    .button{height: 68px; width: 100%; display: flex; align-items: center; border-radius: 26px; border: 3px solid #b90801; background-color: #b90801; color: white; font-family: 'Acrom', sans-serif; font-weight: 200; font-size: 26px;transition: all 0.3s; text-decoration: none; overflow: hidden; text-align: center; position: relative; z-index: 1;
+        &:after{display: block; min-width: 100%; min-height: 68px; content: ''; position: absolute; top: 0; left: -400%; background-color: #ef160d; z-index: 1; transition: all 0.5s;   
+        }
+        &:hover{cursor: pointer;
+            &:after{left: 0;}
+        }
+        span{display: block; min-width: 100%; text-align: center; z-index: 2; position: relative; z-index: 3;}
+       
+            //background-color: #ef160d; border-color: #ef160d;}
         &:active{border-color: #b90801; background-color: #ef160d; }
     }
     
@@ -107,3 +122,37 @@
         .contact-form-row { max-width: 390px; margin: 0 auto; padding-bottom: 26px;}
     }
 /* hidden block */
+
+/* 7 */
+    .b7-wrap{background-image: url(/images/b7-bg.jpg); background-size: cover; background-position: center; font-family: 'Acrom', sans-serif; padding-bottom: 40px; padding-top: 30px;
+        .title-text{ font-size: 55px; line-height: 1.4; font-weight: 200; text-align: center; color: white;
+            p{font-size: 23px;}
+        }
+        .slider-nav{
+            .item{padding: 25px; border:3px solid transparent; border-radius: 25px; transition: all 0.3s;
+                .atex{text-align: center; padding-top: 20px; color: white; font-size: 19px; font-weight: 200;}
+                &.slick-current{ border:3px solid #7c7b79; }
+            }
+        }
+        .slider-for{ max-width: 950px; margin: 0 auto;
+            .item{ color: white;
+                .row-img{ display: flex; align-items: center; justify-content: space-between; }
+                .desript{ padding-top: 30px; text-align: center; padding-bottom: 35px;
+                    .name{ font-size: 45px; font-weight: 500; }
+                    .price{font-weight: 200; font-size: 38px; padding-top: 30px;}
+                    .txt{ font-size: 17px; font-weight: 200; padding-top: 25px; line-height: 1.5;}
+                }
+            }
+        }
+        .down-button{max-width: 420px;; margin: 0 auto; }
+    }
+    
+    .slick-arrow{ background-image: url(/images/arrow.png); width: 40px; height: 98px; top: 0; font-size: inherit;
+        &:before{display: none;} 
+        &:hover, &:active, &:focus, &:visited{background-image: url(/images/arrow.png);}
+        &.slick-prev{ left: -60px; top: 150px; transform: initial;}
+        &.slick-next{ transform: rotate(180deg); left: calc(100% + 20px); top: 150px;}
+    }
+
+
+/* 7 */

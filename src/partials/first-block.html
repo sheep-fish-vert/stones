@@ -1,17 +1,17 @@
 <!-- first block -->
-<section class="first-block" id="first-block">	
+<section class="first-block setion-animate" id="first-block">	
 	<div class="mbox">
 		<div class="first-block-header">
 			Закажите набор камней
 		</div>
 		<div class="main-content">
-			<div class="present">
+			<div class="present  animate-it ">
 				<img src="images/present.png">
 				<span>Идеальный <br>
 				подарок</span>
 			</div>
 			<div class="central-part">
-				<div class="img-stones">
+				<div class="img-stones  animate-it ">
 					<img src="images/nine-stones.png">
 				</div>
 				<div class="old-price">
@@ -22,23 +22,35 @@
 					Новая цена <br>
 					250 000 р.
 				</div>
-				<form>
-					<input type="text" name="contact_tel" class="telephone tel-mask" placeholder="телефон">
-						
-					</input>
-					<input type="submit" class="button" value="Связаться"></input>
-				</form>
+				<form action="ajax.php" name="" class="contact-form first-block-form">
+		            <div class="contact-form-row cfix">
+		                <div class="contact-form-item">
+		                    <div class="contact-form-item-input form_row">
+		                        <div class="form_input">
+		                            <input type="text" name="contact_tel" value="" required="required" placeholder="телефон" class="tel-mask">
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		            <div class="contact-form-row cfix">
+		                <div class="contact-form-item">
+		                    <button type="submit" class="contact-submit button">
+		                        <span>Связаться</span>
+		                    </button>
+		                </div>
+		            </div>
+		        </form>
 				<div class="lower-text">
 					<span>+ <br> мешочек для камней</span>
 				</div>
 			</div>
-			<div class="hury-up">
+			<div class="hury-up  animate-it ">
 				
 				<span>Спешите!</span><br>
 				Количество <br> ограничено
 
 			</div>
-			<img class="bag" src="images/bags-with-stones.png">
+			<img class="bag animate-it" src="images/bags-with-stones.png">
 		</div>		
 	</div>	
 </section>

@@ -269,6 +269,7 @@ $(document).ready(function(){
    
    validate('.four-box-form', {submitFunction:validationCall});
    validate('.block5-form', {submitFunction:validationCall});
+   validate('.first-block-form', {submitFunction:validationCall});
    
    Maskedinput();
    fancyboxForm();

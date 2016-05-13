@@ -152,10 +152,12 @@ $(document).ready(function() {
     $('.footer_placeholder').height($('.footer').outerHeight());
 
     //goTo();
-    //animationBlock($('.setion-animate'));
+    animationBlock($('.setion-animate'));
+    scrollUp('.anchor', '#header');
 });
 
 $(window).resize(function() {
     oneHeightItems();
     $('.footer_placeholder').height($('.footer').outerHeight());
 });
+

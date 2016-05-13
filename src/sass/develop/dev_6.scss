@@ -1,7 +1,10 @@
 // header
-header{background: url('../../images/header-background.jpg') no-repeat; background-size: cover; background-position: 50% 50%;
-	nav{width: 100%; background: url('../../images/grey-background.png');
-		.mbox{display: flex; justify-content: space-between; padding: 10px 0;
+header{background: url('../../images/header-background.jpg') no-repeat; background-size: cover; background-position: 50% 50%; background-attachment: fixed; 
+		img{display: block;}
+	nav{width: 100%; min-width: 1024px;background: url('../../images/background-navigation.jpg'); position: fixed; z-index: 10; opacity: 1; transition: all 0.5s; 
+		&.rotate{margin: 20px; width: 98%; 
+	    }
+			.mbox{display: flex; justify-content: space-between; padding: 10px 0;
 			.menu-item{ text-decoration: none; color: #fff; font-family: 'Acrom'; font-size: 22px; padding: 10px 10px; font-weight: 200; border: 2px solid transparent;
 				&:hover{border: 2px solid #ce0115; border-radius: 25px;}	
 				&:active{background-color: #1e1e1e;}
@@ -9,7 +12,7 @@ header{background: url('../../images/header-background.jpg') no-repeat; backgrou
 		}
 	}
 	.tittle{
-		.mbox{padding: 50px 0 400px 0;
+		.mbox{padding: 100px 0 400px 0;
 			h2{color: #fff; font-family: 'Acrom'; font-size: 55px; font-weight: 400; text-align: center;
 				
 			}
@@ -30,23 +33,34 @@ header{background: url('../../images/header-background.jpg') no-repeat; backgrou
 	.statement{ width: 100%; text-align: center; color: #fff; font-family: 'Acrom'; font-size: 27px; padding: 60px;
 		
 	}
+	.anchor{text-decoration: none;color: #fff; position: fixed; top: 450px; right: 30px; transition: all 0.5s; z-index: 2;
+		img{display: block;}
+		span{display: block;}
+	}
 }
 
 // First Block
 .first-block{background-color:#ededed;
-	.mbox{font-family: 'Acrom';
+	.mbox{font-family: 'Acrom'; overflow: hidden; max-width: 1170px; 
 		.first-block-header{font-size: 64px; font-weight: 200; color: #232323 ; width: 100%; text-align: center; padding: 40px;
 			
 		}
-		.main-content{ display: flex; justify-content: space-between; padding: 40px 0;
-			.present{display: flex;  flex-direction: column; align-items: center;				
+		.main-content{ display: flex; justify-content: space-between; padding: 40px 0; 
+			.bag{transform: translate(100%, 0); transition: all ease-out 2.0s;
+				&.animated{transform: translate(0, 0);}
+			}
+			.present{display: flex;  flex-direction: column; align-items: center;   transform: translate(-100%, 0);	transition: all ease-out 1.0s;
+						&.animated{ transform: translate(0, 0);}			
 				span{font-size: 30px; font-weight: 200; text-align: center; padding: 20px 0;
 					
 				}
 			}
-			.bag{position: absolute; bottom: 0; right: 0px;}
+			.bag{position: absolute; bottom: 30px; right: 0px;}
 			.central-part{
-				.img-stones{
+				.img-stones{ opacity: 0;  transition: all ease-out 1.0s;
+					&.animated{ opacity: 1;
+						
+					}
 					
 				}
 				.old-price{font-size: 31px; text-align: center; padding: 30px 0; line-height: 40px;
@@ -57,10 +71,10 @@ header{background: url('../../images/header-background.jpg') no-repeat; backgrou
 					
 				}
 				form{ text-align: center;
-					.telephone{margin: 20px auto; width: 75%;
+					input{margin: 20px auto; width: 75%;
 						
 					}
-					.button{ margin: 20px auto; width: 75%; text-align: center; font-size: 45px; padding: 0 50px;
+					.button{ margin: 0px auto; width: 75%; text-align: center; font-size: 45px; padding: 0 50px;
 					
 					}
 				}
@@ -68,7 +82,8 @@ header{background: url('../../images/header-background.jpg') no-repeat; backgrou
 					span{display: block; width: 100%;font-size: 45px; text-align: center; padding: 40px 0; }
 				}	
 			}
-			.hury-up{font-size: 29px; font-weight: 200; text-align: center; padding: 40px 0;
+			.hury-up{font-size: 29px; font-weight: 200; text-align: center; padding: 40px 0; transform: translate(100%, 0); transition: all ease-out 0.5s;
+				&.animated{transform: translate(0, 0);}	
 				span{font-size: 49px; font-weight: 200;
 					
 				}
@@ -80,7 +95,7 @@ header{background: url('../../images/header-background.jpg') no-repeat; backgrou
 
 //second-block
 .second-block{background: url('../../images/second-block-background.jpg') no-repeat; background-size: cover; background-position: 50% 50%; height: 430px;
-	.mbox{display: flex; font-family: 'Acrom';
+	.mbox{display: flex; font-family: 'Acrom'; max-width: 1170px;
 		.left-side{width: 50%; color: white; font-size: 40px; text-align: center; padding: 40px 0 0 80px;
 			span{font-size: 54px; font-weight: bold;
 				
@@ -90,11 +105,12 @@ header{background: url('../../images/header-background.jpg') no-repeat; backgrou
 			}
 		}	
 		.right-side{width: 50%; display: flex; flex-direction: column; padding: 0 0 0 70px;
-			.heading{font-size: 48px; color: #fff; padding: 30px 0 70px 30px;
+			.heading{font-size: 48px; color: #fff; padding: 30px 0 70px 30px; opacity: 0; transition: all ease-out 1.5s;
+				&.animated{opacity: 1;}
 				span{font-size: 68px; font-weight: bold;}
 			}
 			.lower-part{display: flex; color: #fff; 
-				span{font-size: 28px; font-weight: bold;
+				span{font-size: 24px; font-weight: bold;
 					span{font-size: 26px; font-weight: 200; }
 				}
 				img{position: relative; left: -30px;}
@@ -104,5 +120,109 @@ header{background: url('../../images/header-background.jpg') no-repeat; backgrou
 		.piramid-stones{position: absolute; top: 230px; left: -30px;
 			
 		}
+	}
+}
+
+//third block
+
+.third-block{ background: url('../../images/third-block-background.jpg') no-repeat; background-size: cover; font-family: 'Acrom';
+	.mbox{overflow: hidden;
+		.third-block-headding {color: #fff; text-align: center; font-size: 38px; padding: 70px 0; 
+			span{font-size: 56px; line-height: 70px; color: #b90801; opacity: 0; transition: all ease-out 2.0s;
+				&.animated{opacity: 1;}
+			}
+		}
+		.third-block-content{
+			ul{ width: 670px; float: right; padding: 30px 0 0 0; white-space: pre-line; text-align: right;
+				li{ font-size: 19px; font-weight: 200; color: #cac8c7; line-height: 25px; padding: 30px 0; transform: translate(100%, 0); transition: all ease-out 1.0s; 
+					&.animated{transform: translate(0, 0);}
+					span{font-size: 22px; font-weight: bold; color: #fff; }
+				}
+			}
+		}
+		.video{width: 100%; display: flex; justify-content: center; padding: 50px 0;
+			.video-vraper{ border: 2px solid #fff; padding: 5px; border-radius: 4px;
+			}
+		}
+		.button-vraper{width: 100%;
+			.third-class-button{ width: 475px; margin: 0 auto; padding: 80px 0;
+				a{ text-align: center; font-size: 33px;
+					span{}
+				}
+			}
+		}
+	}
+}
+
+//footer
+
+.footer{ background: url("../../images/background-footer.jpg"); 
+       .mbox{display: flex; justify-content: space-between; padding: 0 0; font-family:'Acrom'; max-width: 1170px;
+       		.footer-part:nth-child(1){white-space: pre-line; line-height: 25px; font-size: 20px; padding: 0 0 10px 0;
+       			
+       		}
+       		.footer-part:nth-child(2){display: flex; align-items: center;    
+       			.button-vraper{ 
+       				.footer-button{
+       					.button {padding: 10px;
+       					}	
+       				}
+       			}		
+       		}
+       		.footer-part:nth-child(3){font-size: 30px; display: flex; flex-direction: column; justify-content: center; 
+       		       
+       			.logo-block{ font-size: 15px; display: flex; justify-content: space-between;padding: 10px 0 0 10px; 
+       				p{ padding: 30px 10px 0 0 ;}
+       			}
+       			
+       		}
+       	
+       }
+}
+
+//six block
+
+
+.six-block{
+	.mbox{font-family: 'Acrom';
+		.advantages{display: flex; justify-content: space-between;padding: 40px 0; 
+			.advantage-item{ display: flex; flex-direction: column; align-items: center;
+				img{}
+				.advantage-name{padding: 10px 0 0 0; font-size: 33px; font-weight: 200;
+					
+				}
+				.advantage-description{white-space: pre-line; font-size: 18px; font-weight: 200; line-height: 25px;
+					
+				}
+
+				&:nth-child(2){
+					img{-webkit-filter: grayscale(100%); margin-top: -10px;
+
+						}	
+				}
+			}
+		}
+
+		.present-block{padding: 20px;display: flex; flex-direction: column; align-items: center;
+			img{opacity: 0; transition: all ease-out 1.5s;  position: relative; animation: jumping; animation-duration: 0.5s; animation-iteration-count: infinite; animation-direction: alternate;
+				&.animated{
+					opacity: 1;
+				}
+			}
+
+			span{padding: 20px; text-transform: uppercase; font-size: 28px; font-weight: 200;
+				
+			}
+		}
+	}
+	
+}
+//animation for six block gift.png
+@keyframes jumping{
+	0%{
+		top: 0;
+	}
+	100%{
+		top: -20px;
 	}
 }
