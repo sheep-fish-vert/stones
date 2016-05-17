@@ -67,10 +67,10 @@
                             span{font-family: 'Acrom'; font-size: 46px;}
                         }
                         input{color: white; border-color: white;
-                            &::-webkit-input-placeholder {color:white; font-family: 'Acrom';}
-                            &:-moz-placeholder {color:white;opacity:1; font-family: 'Acrom';}
-                            &::-moz-placeholder {color:white;opacity:1; font-family: 'Acrom';}
-                            &:-ms-input-placeholder {color:white; font-family: 'Acrom';}
+                            &::-webkit-input-placeholder {color:white; font-size:29px; font-weight: 200;font-family: 'Acrom';}
+                            &:-moz-placeholder {color:white;opacity:1; font-size:29px; font-weight: 200;font-family: 'Acrom';}
+                            &::-moz-placeholder {color:white;opacity:1; font-size:29px; font-weight: 200;font-family: 'Acrom';}
+                            &:-ms-input-placeholder {color:white;font-size:29px; font-weight: 200; font-family: 'Acrom';}
                             &.error{border-color: red;}
                         }
                     }
@@ -164,7 +164,7 @@
                 }
             }
             .down-button{max-width: 420px;; margin: 0 auto; padding: 20px 0px 10px 0px;
-                span{ font-size: 44px;}
+                span{ font-size: 44px; color: white;}
             }
         }
     }

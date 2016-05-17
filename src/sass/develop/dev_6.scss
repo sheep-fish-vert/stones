@@ -74,10 +74,10 @@ header{background: url('../../images/header-background.jpg') no-repeat; backgrou
 				}
 				form{ text-align: center; padding: 20px 0px 0px 0px;
 					input{margin: 20px auto; width: 390px; padding: 10px 0px 10px 25px; font-family: 'Acrom;'; 
-						&::-webkit-input-placeholder {color:black;font-size:29px; font-weight: 200;}
-				        &:-moz-placeholder {color:black;opacity:1;font-size:29px; font-weight: 200;}
-				        &::-moz-placeholder {color:black;opacity:1;font-size:29px; font-weight: 200;}
-				        &:-ms-input-placeholder {color:black;font-size:29px; font-weight: 200;}
+						&::-webkit-input-placeholder {color:black;font-size:29px; font-weight: 200;font-family: 'Acrom';}
+				        &:-moz-placeholder {color:black;opacity:1;font-size:29px; font-weight: 200;font-family: 'Acrom';}
+				        &::-moz-placeholder {color:black;opacity:1;font-size:29px; font-weight: 200;font-family: 'Acrom';}
+				        &:-ms-input-placeholder {color:black;font-size:29px; font-weight: 200;font-family: 'Acrom';}
 					}
 					.contact-form-item{padding: 0px 0px 0px 20px;
 						.button{ margin: 15px auto; width: 390px; text-align: center; font-size: 45px; padding: 0px 50px 0px 50px ;
@@ -163,21 +163,21 @@ header{background: url('../../images/header-background.jpg') no-repeat; backgrou
 //footer
 
 .footer{ background: url("../../images/background-footer.jpg"); 
-       .mbox{display: flex; justify-content: space-between; padding: 0 0 0 0; font-family:'Acrom'; max-width: 1170px;
+       .mbox{display: flex; justify-content: space-between; padding: 0 0 35px 0; font-family:'Acrom'; max-width: 1170px;
        		.footer-part:nth-child(1){white-space: pre-line; line-height: 1.5; font-size: 20px; padding: 0px 0 10px 15px;
        			
        		}
        		.footer-part:nth-child(2){display: flex; align-items: center;    
-       			.button-vraper{ min-width: 430px; padding: 30px 0px 0 0;
+       			.button-vraper{ min-width: 420px; padding: 0px 0px 0 10px;
        				.footer-button{
-       					.button {padding: 10px;
+       					.button {padding: 0px;
        					}	
        				}
        			}		
        		}
        		.footer-part:nth-child(3){font-size: 34px; font-family: 'Acrom'; display: flex; flex-direction: column; justify-content: center; text-align: left;
-       		     .telephone-num{  padding: 50px 0px 0px 50px;text-align: right;}  
-       			.logo-block{  display: flex; justify-content: space-between; padding: 30px 10px 0 10px; 
+       		     .telephone-num{  padding: 45px 0px 0px 50px;text-align: right;}  
+       			.logo-block{  display: flex; justify-content: space-between; padding: 30px 10px 20px 10px; 
        				p{ padding: 30px 10px 0 25px; font-size: 17px;}
        			}
        			
