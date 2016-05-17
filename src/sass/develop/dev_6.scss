@@ -55,7 +55,7 @@ header{background: url('../../images/header-background.jpg') no-repeat; backgrou
 					
 				}
 			}
-			.bag{position: absolute; bottom: 30px; right: 0px;}
+			.bag{position: absolute; bottom: 30px; right: -20px;}
 			.central-part{
 				.img-stones{ opacity: 0;  transition: all ease-out 1.0s; padding: 25px 0px 0px 0px;
 					&.animated{ opacity: 1;
@@ -73,11 +73,15 @@ header{background: url('../../images/header-background.jpg') no-repeat; backgrou
 					}
 				}
 				form{ text-align: center; padding: 20px 0px 0px 0px;
-					input{margin: 20px auto; width: 75%;
-						
+					input{margin: 20px auto; width: 390px; padding: 10px 0px 10px 25px; font-family: 'Acrom;'; 
+						&::-webkit-input-placeholder {color:black;font-size:29px; font-weight: 200;}
+				        &:-moz-placeholder {color:black;opacity:1;font-size:29px; font-weight: 200;}
+				        &::-moz-placeholder {color:black;opacity:1;font-size:29px; font-weight: 200;}
+				        &:-ms-input-placeholder {color:black;font-size:29px; font-weight: 200;}
 					}
-					.button{ margin: 15px auto; width: 75%; text-align: center; font-size: 45px; padding: 0px 50px 0px 0px ;
-					
+					.contact-form-item{padding: 0px 0px 0px 20px;
+						.button{ margin: 15px auto; width: 390px; text-align: center; font-size: 45px; padding: 0px 50px 0px 50px ;
+						}
 					}
 				}
 				.lower-text{ 
@@ -128,26 +132,26 @@ header{background: url('../../images/header-background.jpg') no-repeat; backgrou
 //third block
 
 .third-block{ background: url('../../images/third-block-background.jpg') no-repeat; background-size: cover; font-family: 'Acrom';
-	.mbox{overflow: hidden;
-		.third-block-headding {color: #fff; text-align: center; font-size: 38px; padding: 70px 0; 
-			span{font-size: 56px; line-height: 70px; color: #b90801; opacity: 0; transition: all ease-out 2.0s;
+	.mbox{overflow: hidden; min-width: 1090px;
+		.third-block-headding {color: #fff; text-align: center; font-size: 38px; padding: 80px 0px 0px 40px; line-height: 1.2;
+			span{font-size: 56px; line-height: 70px; color: #b90801; opacity: 0; transition: all ease-out 2.0s; font-weight:bold; 
 				&.animated{opacity: 1;}
 			}
 		}
 		.third-block-content{
-			ul{ width: 670px; float: right; padding: 30px 0 0 0; white-space: pre-line; text-align: right;
-				li{ font-size: 19px; font-weight: 200; color: #cac8c7; line-height: 25px; padding: 30px 0; transform: translate(100%, 0); transition: all ease-out 1.0s; 
+			ul{ width: 670px; float: right; padding: 20px 0px 0px 0px; white-space: pre-line; text-align: right;
+				li{ font-size: 19px; font-weight: 200; color: #cac8c7; line-height: 25px; padding: 60px 0px 0px 0px ; transform: translate(100%, 0); transition: all ease-out 1.0s; 
 					&.animated{transform: translate(0, 0);}
 					span{font-size: 22px; font-weight: bold; color: #fff; }
 				}
 			}
 		}
-		.video{width: 100%; display: flex; justify-content: center; padding: 50px 0;
+		.video{width: 100%; display: flex; justify-content: center; padding: 80px 0px 0px 0px;
 			.video-vraper{ border: 2px solid #fff; padding: 5px; border-radius: 4px;
 			}
 		}
 		.button-vraper{width: 100%;
-			.third-class-button{ width: 475px; margin: 0 auto; padding: 80px 0;
+			.third-class-button{ width: 475px; margin: 0 auto; padding: 70px 0px 120px 0px;
 				a{ text-align: center; font-size: 33px;
 					span{}
 				}
@@ -159,22 +163,22 @@ header{background: url('../../images/header-background.jpg') no-repeat; backgrou
 //footer
 
 .footer{ background: url("../../images/background-footer.jpg"); 
-       .mbox{display: flex; justify-content: space-between; padding: 0 0; font-family:'Acrom'; max-width: 1170px;
-       		.footer-part:nth-child(1){white-space: pre-line; line-height: 25px; font-size: 20px; padding: 0 0 10px 0;
+       .mbox{display: flex; justify-content: space-between; padding: 0 0 0 0; font-family:'Acrom'; max-width: 1170px;
+       		.footer-part:nth-child(1){white-space: pre-line; line-height: 1.5; font-size: 20px; padding: 0px 0 10px 15px;
        			
        		}
        		.footer-part:nth-child(2){display: flex; align-items: center;    
-       			.button-vraper{ 
+       			.button-vraper{ min-width: 430px; padding: 30px 0px 0 0;
        				.footer-button{
        					.button {padding: 10px;
        					}	
        				}
        			}		
        		}
-       		.footer-part:nth-child(3){font-size: 30px; display: flex; flex-direction: column; justify-content: center; 
-       		       
-       			.logo-block{ font-size: 15px; display: flex; justify-content: space-between;padding: 10px 0 0 10px; 
-       				p{ padding: 30px 10px 0 0 ;}
+       		.footer-part:nth-child(3){font-size: 34px; font-family: 'Acrom'; display: flex; flex-direction: column; justify-content: center; text-align: left;
+       		     .telephone-num{  padding: 50px 0px 0px 50px;text-align: right;}  
+       			.logo-block{  display: flex; justify-content: space-between; padding: 30px 10px 0 10px; 
+       				p{ padding: 30px 10px 0 25px; font-size: 17px;}
        			}
        			
        		}
@@ -186,14 +190,14 @@ header{background: url('../../images/header-background.jpg') no-repeat; backgrou
 
 
 .six-block{
-	.mbox{font-family: 'Acrom';
-		.advantages{display: flex; justify-content: space-between;padding: 40px 0; 
+	.mbox{font-family: 'Acrom'; min-width: 1140px; padding: 0px 0px 0px 0px;
+		.advantages{display: flex; justify-content: space-between;padding: 70px 0px 40px 10px; 
 			.advantage-item{ display: flex; flex-direction: column; align-items: center;
 				img{}
-				.advantage-name{padding: 10px 0 0 0; font-size: 33px; font-weight: 200;
+				.advantage-name{padding: 10px 0 0px 0; font-size: 33px; font-weight: 200;
 					
 				}
-				.advantage-description{white-space: pre-line; font-size: 18px; font-weight: 200; line-height: 25px;
+				.advantage-description{white-space: pre-line; font-size: 18px; font-weight: 200; line-height: 1.2; text-align: center;
 					
 				}
 
@@ -205,14 +209,14 @@ header{background: url('../../images/header-background.jpg') no-repeat; backgrou
 			}
 		}
 
-		.present-block{padding: 20px;display: flex; flex-direction: column; align-items: center;
+		.present-block{padding: 20px 20px 20px 40px;display: flex; flex-direction: column; align-items: center;
 			img{opacity: 0; transition: all ease-out 1.5s;  position: relative; animation: jumping; animation-duration: 0.5s; animation-iteration-count: infinite; animation-direction: alternate;
 				&.animated{
 					opacity: 1;
 				}
 			}
 
-			span{padding: 20px; text-transform: uppercase; font-size: 28px; font-weight: 200;
+			span{padding: 0px 0px 40px 20px; text-transform: uppercase; font-size: 29px; font-weight: 200;
 				
 			}
 		}
