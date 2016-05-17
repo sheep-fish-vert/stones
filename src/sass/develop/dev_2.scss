@@ -22,10 +22,10 @@
             .contact-form-title{ text-align: center; font-family: 'Acrom', sans-serif; padding-bottom: 60px;
                 
                 p{
-                    .atention{ font-size: 68px; font-weight: 200; padding-bottom: 25px; opacity: 0;transition: all ease-out 4.0s;
+                    .atention{ font-size: 68px; font-weight: 300; padding-bottom: 25px; opacity: 0;transition: all ease-out 4.0s;
                         &.animated{ opacity: 1;}
                     }
-                    span{font-size: 35px; font-weight: 200;}
+                    span{font-size: 35px; font-weight: 300;}
                 }
                 b{font-weight: 700; font-size: 37px; display: block; max-width: 640px; margin: 0 auto; padding: 15px 10px 0px 0px; line-height: 1.1;}
                 i{display: block; font-size: 21px; font-weight: 200; padding: 20px 20px 50px 20px;}            
@@ -53,13 +53,13 @@
             .left{width: 48%; 
                 .convert{border: 3px solid rgba(255,255,255,0.6); border-radius: 25px; background-color: rgba(0, 0, 0, 0.4); color: white; padding: 25px 0px 35px 30px;
                     ul{ padding-top: 20px; overflow: hidden;
-                        li{ position: relative; font-size: 21px; line-height: 1; padding-bottom: 37px; font-weight: 200;  font-family: 'Acrom', sans-serif; padding-left: 45px; transform: translate(-100%, 0); transition: all ease-out 2.0s;
+                        li{ position: relative; font-size: 21px; line-height: 1; padding-bottom: 37px; font-weight: 300;  font-family: 'Acrom', sans-serif; padding-left: 45px; transform: translate(-100%, 0); transition: all ease-out 2.0s;
                            &.animated{transform: translate(0, 0);}
                             &:before{content: ''; position: absolute; left: 0; width: 20px; height: 20px; border-radius: 50%; background-color: white; }
                         }
                     }
                     .contact-form-title{ text-align: center;padding: 0px 60px 0px 30px;
-                        p{text-decoration: line-through; font-weight: 200; font-size: 33px; padding-bottom: 15px;}
+                        p{text-decoration: line-through; font-weight: 300; font-size: 33px; padding-bottom: 15px;}
                         h5{ font-size: 49px; font-weight: 700; }
                     }
                     .contact-form-row{ padding: 30px 30px 0px 0px; max-width: 410px; margin: 0 auto;
@@ -67,9 +67,9 @@
                             span{font-family: 'Acrom'; font-size: 46px;}
                         }
                         input{color: white; border-color: white;
-                            &::-webkit-input-placeholder {color:white; font-size:29px; font-weight: 200;font-family: 'Acrom';}
-                            &:-moz-placeholder {color:white;opacity:1; font-size:29px; font-weight: 200;font-family: 'Acrom';}
-                            &::-moz-placeholder {color:white;opacity:1; font-size:29px; font-weight: 200;font-family: 'Acrom';}
+                            &::-webkit-input-placeholder {color:white; font-size:29px; font-weight: 300;font-family: 'Acrom';}
+                            &:-moz-placeholder {color:white;opacity:1; font-size:29px; font-weight: 300;font-family: 'Acrom';}
+                            &::-moz-placeholder {color:white;opacity:1; font-size:29px; font-weight: 300;font-family: 'Acrom';}
                             &:-ms-input-placeholder {color:white;font-size:29px; font-weight: 200; font-family: 'Acrom';}
                             &.error{border-color: red;}
                         }
