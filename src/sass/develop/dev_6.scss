@@ -128,7 +128,7 @@ header{background: url('../../images/header-background.jpg') no-repeat; backgrou
 
 //third block
 
-.third-block{ background: url('../../images/third-block-background.jpg') no-repeat; background-size: cover; font-family: 'Acrom';
+.third-block{ background: url('../../images/third-block-background.jpg') no-repeat; background-size: cover; background-position:50% 40%; font-family: 'Acrom';
 	.mbox{overflow: hidden; min-width: 1090px;
 		.third-block-headding {color: #fff; text-align: center; font-size: 38px; padding: 80px 0px 0px 40px; line-height: 1.2;
 			span{font-size: 56px; line-height: 70px; color: #b90801; opacity: 0; transition: all ease-out 2.0s; font-weight:bold; 
