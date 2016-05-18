@@ -75,10 +75,6 @@ header{background: url('../../images/header-background.jpg') no-repeat; backgrou
 				}
 				form{ text-align: center; padding: 20px 0px 0px 0px;
 					input{margin: 20px auto; width: 390px; padding: 10px 0px 10px 25px; font-family: 'Acrom;'; 
-						&::-webkit-input-placeholder {color:black;font-size:29px; font-weight: 200;font-family: 'Acrom';}
-				        &:-moz-placeholder {color:black;opacity:1;font-size:29px; font-weight: 200;font-family: 'Acrom';}
-				        &::-moz-placeholder {color:black;opacity:1;font-size:29px; font-weight: 200;font-family: 'Acrom';}
-				        &:-ms-input-placeholder {color:black;font-size:29px; font-weight: 200;font-family: 'Acrom';}
 					}
 					.contact-form-item{padding: 0px 0px 0px 20px;
 						.button{ margin: 15px auto; width: 390px; text-align: center; font-size: 45px; padding: 0px 50px 0px 50px ;
