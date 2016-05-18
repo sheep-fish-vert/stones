@@ -2,7 +2,7 @@
     .conteiner-top{  padding-top: 40px; padding-bottom: 57px; background-image: url(/images/bg-4.jpg);
         .mbox{min-width: 1090px;
             .title-text{ font-size: 51px; line-height: 0.85; font-family: 'Acrom', sans-serif; font-weight: 400; text-align: right; width: 60%; position: relative; right: 20px;
-                &:before{content: ''; position: absolute; left: 105%; width: 460px; height: 378px; background-image: url(/images/b4-mm.png); bottom: -20px;}        
+                &:before{content: ''; position: absolute; left: 100%; width: 460px; height: 378px; background-image: url(/images/b4-mm.png); bottom: -20px;}        
             }
             .item-row{display: flex; align-items: flex-start; justify-content: space-between; padding-top: 75px; 
                 .item{width: 295px; border-radius: 34px; background-color: rgba(255,255,255,0.38); min-height: 315px; display: flex; flex-wrap: wrap; align-content: center;; justify-content: center; text-align: center; box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.12);
@@ -49,16 +49,16 @@
 
 /* 5 */
     .fifth-wrap{background-image: url(/images/bg-5.jpg); background-size: cover; padding: 50px 0 30px; font-family: 'Acrom', sans-serif;
-        .mbox{display: flex; align-items: center; justify-content: space-between; min-width: 1190px; padding: 0px 0px 0px 70px;
-            .left{width: 48%; 
-                .convert{border: 3px solid rgba(255,255,255,0.6); border-radius: 25px; background-color: rgba(0, 0, 0, 0.4); color: white; padding: 25px 0px 35px 30px;
-                    ul{ padding-top: 20px; overflow: hidden;
-                        li{ position: relative; font-size: 21px; line-height: 1; padding-bottom: 37px; font-weight: 300;  font-family: 'Acrom', sans-serif; padding-left: 45px; transform: translate(-100%, 0); transition: all ease-out 2.0s;
+        .mbox{display: flex; align-items: center; justify-content: space-between; padding: 0px 0px 0px 0px;
+            .left{width: 51%; 
+                .convert{border: 3px solid rgba(255,255,255,0.6); border-radius: 25px; background-color: rgba(0, 0, 0, 0.4); color: white; padding: 25px 0px 35px 20px;
+                    ul{ padding: 20px 0px 0px 0px; overflow: hidden;
+                        li{ position: relative; font-size: 21px; line-height: 1.0; padding-bottom: 35px; font-weight: 300;  font-family: 'Acrom', sans-serif; padding-left: 45px; transform: translate(-100%, 0); transition: all ease-out 2.0s;
                            &.animated{transform: translate(0, 0);}
                             &:before{content: ''; position: absolute; left: 0; width: 20px; height: 20px; border-radius: 50%; background-color: white; }
                         }
                     }
-                    .contact-form-title{ text-align: center;padding: 0px 60px 0px 30px;
+                    .contact-form-title{ text-align: center;padding: 15px 60px 0px 30px;
                         p{text-decoration: line-through; font-weight: 300; font-size: 33px; padding-bottom: 15px;}
                         h5{ font-size: 49px; font-weight: 700; }
                     }
@@ -96,7 +96,7 @@
 
 
 /* form  */
-    input{width: 100%; height: 64px; border-radius: 26px; border: 3px solid #000000; padding-left: 18px; font-size: 29px!important; font-weight: 200!important; color: black; background-color: transparent;
+    input{width: 100%; height: 64px; border-radius: 26px; border: 3px solid #000000; padding-left: 18px; font-size: 29px!important; font-weight: 300!important; color: black; background-color: transparent;
         &.error{border-color: red;}
         &::-webkit-input-placeholder {color:black;}
         &:-moz-placeholder {color:black;opacity:1;}
@@ -110,7 +110,7 @@
         &:hover{cursor: pointer;
             &:after{left: 0;}
         }
-        span{display: block; min-width: 100%; text-align: center; z-index: 2; position: relative; z-index: 3;}
+        span{display: block;font-weight:300; min-width: 100%; text-align: center; z-index: 2; position: relative; z-index: 3;}
        
             //background-color: #ef160d; border-color: #ef160d;}
         &:active{border-color: #b90801; background-color: #ef160d; }
